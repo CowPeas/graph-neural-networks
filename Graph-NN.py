@@ -4,7 +4,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 
-# Create a graph representation of the computer network
+# Create a graph representation of a simple computer network where A-> B-> C-> D-> E
 G = nx.Graph()
 G.add_nodes_from(['A', 'B', 'C', 'D', 'E'])
 G.add_edges_from([('A', 'B'), ('B', 'C'), ('C', 'D'), ('D', 'E')])
